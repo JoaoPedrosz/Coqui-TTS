@@ -12,9 +12,9 @@ from setuptools import setup, Extension, find_packages
 from Cython.Build import cythonize
 
 
-if LooseVersion(sys.version) < LooseVersion("3.6") or LooseVersion(sys.version) > LooseVersion("3.9"):
+if LooseVersion(sys.version) < LooseVersion("3.6") or LooseVersion(sys.version) > LooseVersion("3.10"):
     raise RuntimeError(
-        "TTS requires python >= 3.6 and <3.9 "
+        "TTS requires python >= 3.6 and <3.10 "
         "but your Python version is {}".format(sys.version)
     )
 
